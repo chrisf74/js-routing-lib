@@ -1,5 +1,5 @@
 # js-routing-lib
-Client side routing solution built on [Backbone.js](http://backbonejs.org/) and written in es6.
+Client side routing solution built on Backbone.js and written in es6.
 
 ## Dependencies
 1. [Backbone.js](http://backbonejs.org/)
