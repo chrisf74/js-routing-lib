@@ -17,7 +17,7 @@ Client side routing solution built on Backbone.js and written in es6.
 			}
 		}
 
-2. Define routes
+2. Define routes instance
 
 		// routes/index.js
 		
@@ -47,6 +47,6 @@ Client side routing solution built on Backbone.js and written in es6.
 
 		// App.js
 		
-		import routes from 'routes/';
+		import routes from './routes/';
 		// Render app...
 		routes.startHistory();
