@@ -7,7 +7,9 @@ Client side routing solution built on [backbone](http://backbonejs.org/) and wri
 
 ## Example Usage
 1. Extend Route class
+
 		// routes/AppRoute.js
+		
 		import Route from './path/to/js-routing-lib/Route';
 		class AppRoute extends Route {
 			action(params) {
@@ -16,7 +18,9 @@ Client side routing solution built on [backbone](http://backbonejs.org/) and wri
 		}
 
 2. Define routes
+
 		// routes/index.js
+		
 		import AppRoute from './AppRoute';
 		import Routes from './path/to/js-routing-lib/Routes';
 		let routes = new Routes(AppRoute);
@@ -40,7 +44,9 @@ Client side routing solution built on [backbone](http://backbonejs.org/) and wri
 		export default routes;
 
 3. Import routes instance and start history
+
 		// App.js
+		
 		import routes from 'routes/';
 		// Render app...
 		routes.startHistory();
