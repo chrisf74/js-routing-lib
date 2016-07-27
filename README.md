@@ -6,47 +6,53 @@ Client side routing solution built on Backbone.js and written in es6.
 2. [Babel](http://babeljs.io/)
 
 ## Example Usage
-1. Extend Route class
+Extend Route class
 
-		// routes/AppRoute.js
+```javascript
+// routes/AppRoute.js
 		
-		import Route from './path/to/js-routing-lib/Route';
-		class AppRoute extends Route {
-			action(params) {
-				// do something to change page view
-			}
-		}
+import Route from './path/to/js-routing-lib/Route';
+class AppRoute extends Route {
+	action(params) {
+		// do something to change page view
+	}
+};
+```
 
-2. Define routes instance
+Define routes instance
 
-		// routes/index.js
+```javascript
+// routes/index.js
 		
-		import AppRoute from './AppRoute';
-		import Routes from './path/to/js-routing-lib/Routes';
-		let routes = new Routes(AppRoute);
+import AppRoute from './AppRoute';
+import Routes from './path/to/js-routing-lib/Routes';
+let routes = new Routes(AppRoute);
 
-		// Instance of AppRoute
-		routes.showHome = routes.mapRoute('');
+// Instance of AppRoute
+routes.showHome = routes.mapRoute('');
 
-		// Instance of AppRoute with custom props
-		routes.showUser = routes.mapRoute('users/:userId', {
-			// custom props...
-		});
+// Instance of AppRoute with custom props
+routes.showUser = routes.mapRoute('users/:userId', {
+	// custom props...
+});
 
-		class ListUsersRoute extends AppRoute {
-			// extend AppRoute class
-		}
+class ListUsersRoute extends AppRoute {
+	// extend AppRoute class
+};
 
-		// Instance of ListUsersRoute
-		routes.listUsers = routes.map('users', ListUsersRoute);
+// Instance of ListUsersRoute
+routes.listUsers = routes.map('users', ListUsersRoute);
 
-		// Export routes instance
-		export default routes;
+// Export routes instance
+export default routes;
+```
 
-3. Import routes instance and start history
+Import routes instance and start history
 
-		// App.js
+```javascript
+// App.js
 		
-		import routes from './routes/';
-		// Render app...
-		routes.startHistory();
+import routes from './routes/';
+// Render app...
+routes.startHistory();
+```
