@@ -6,12 +6,22 @@ Javascript routing framework built on Backbone.js and written in es6.
 2. [Babel](http://babeljs.io/)
 
 ## Example Usage
+Get routing-js
+
+```bash
+	$ cd myapp
+	$ curl -LO https://github.com/chrisf74/routing-js/archive/master.zip
+	$ unzip master.zip
+	$ mv routing-js-master/src ./routing-lib
+	$ rm -r master.zip routing-js-master/
+```
+
 Extend Route class
 
 ```javascript
 // routes/AppRoute.js
 		
-import Route from './path/to/routing-js/files/Route';
+import Route from '../routing-lib/Route';
 class AppRoute extends Route {
 	action(params) {
 		// do something to change page view
@@ -25,7 +35,7 @@ Define routes instance
 // routes/index.js
 		
 import AppRoute from './AppRoute';
-import Routes from './path/to/routing-js/files//Routes';
+import Routes from '../routing-lib/Routes';
 let routes = new Routes(AppRoute);
 
 // Instance of AppRoute
