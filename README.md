@@ -1,5 +1,5 @@
-# js-routing-lib
-Client side routing solution built on Backbone.js and written in es6.
+# routing-js
+Javascript routing framework built on Backbone.js and written in es6.
 
 ## Dependencies
 1. [Backbone.js](http://backbonejs.org/)
@@ -11,7 +11,7 @@ Extend Route class
 ```javascript
 // routes/AppRoute.js
 		
-import Route from './path/to/js-routing-lib/Route';
+import Route from './path/to/routing-js/files/Route';
 class AppRoute extends Route {
 	action(params) {
 		// do something to change page view
@@ -25,7 +25,7 @@ Define routes instance
 // routes/index.js
 		
 import AppRoute from './AppRoute';
-import Routes from './path/to/js-routing-lib/Routes';
+import Routes from './path/to/routing-js/files//Routes';
 let routes = new Routes(AppRoute);
 
 // Instance of AppRoute
