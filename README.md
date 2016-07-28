@@ -8,12 +8,12 @@ Javascript routing framework built on Backbone.js and written in es6.
 ## Example Usage
 Get routing-js
 
-```bash
-	$ cd myapp
-	$ curl -LO https://github.com/chrisf74/routing-js/archive/master.zip
-	$ unzip master.zip
-	$ mv routing-js-master/src ./routing-lib
-	$ rm -r master.zip routing-js-master/
+```
+$ cd myapp
+$ curl -LO https://github.com/chrisf74/routing-js/archive/master.zip
+$ unzip master.zip
+$ mv routing-js-master/src ./routing-lib
+$ rm -r master.zip routing-js-master/
 ```
 
 Extend Route class
